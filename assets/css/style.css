@@ -47,24 +47,14 @@
 
     .root-xiaomi-strap-mi-brand-7 {overflow: hidden; width: 100%;}
 
-    .main-title_xiaomi-strap-mi-brand-7-01 {font-size: 1.8rem; color: var(--title); text-align: left; margin: 4rem 2rem 0rem 2rem;}
-    .sub-title_xiaomi-strap-mi-brand-7-01 {font-size: 1rem; color: var(--title); line-height: 1.5rem; text-align: left; margin: 1rem 2rem 1rem 2rem;}
-    .sub-title_xiaomi-strap-mi-brand-7-02 {font-size: 0.8rem; color: var(--sub-tittle-gray); line-height: 1.5rem; text-align: left;}
+    .main-title_xiaomi-strap-mi-brand-7-01 {font-size: 1.8rem; color: var(--title); text-align: center; margin: 2rem;}
+    .sub-title_xiaomi-strap-mi-brand-7-01 {font-size: 1rem; color: var(--title); line-height: 1.5rem; text-align: center; margin: 1rem 2rem 1rem 2rem;}
 
-    .title_xiaomi-strap-mi-brand-7-01 {font-size: 1.5rem; color: var(--title); text-align: left; margin: 2rem 2rem 1rem 2rem;}
-    .text_xiaomi-strap-mi-brand-7-02 {font-size: 1rem; color: var(--title); line-height: 1.5rem; text-align: left; margin: 0rem 2rem 1rem 2rem;}
-    .text_xiaomi-strap-mi-brand-7-03 {font-size: 1rem; color: var(--text-blue); line-height: 1.5rem; text-align: center; margin: 0rem 2rem 1rem 2rem;}
-
-    .text_xiaomi-strap-mi-brand-7-65 {font-size: 4rem; color: var(--text-blue); line-height: 1.5rem; text-align: center;}
-    .text_xiaomi-strap-mi-brand-7-w {font-size: 1rem; color: var(--text-blue); line-height: 1.5rem; text-align: center;}
-
-    .text_xiaomi-strap-mi-brand-7-specs-01 {font-size: 0.7rem; color: var(--text-blue); text-align: center;}
-    .text_xiaomi-strap-mi-brand-7-specs-02 {font-size: 0.7rem; color: var(--text-blue); text-align: center;}
-    .text_xiaomi-strap-mi-brand-7-specs-04 {font-size: 0.7rem; color: var(--text-blue); text-align: center; margin: 0.2rem;}
+    .title_xiaomi-strap-mi-brand-7-01 {font-size: 2rem; color: var(--title); text-align: center; margin: 1rem 1rem 0rem 1rem;}
+    .sub-title_xiaomi-strap-mi-brand-7-02 {font-size: 1rem; color: var(--title); line-height: 1.5rem; text-align: center; margin: 1rem 1rem 0rem 1rem;}
+    .text_xiaomi-strap-mi-brand-7-01 {font-size: 1rem; color: var(--tittle-gray); line-height: 1.5rem; text-align: center; margin: 1rem 1rem 0rem 1rem;}
 
 
-    .title_xiaomi-strap-mi-brand-7-04 {font-size: 1.5rem; color: var(--text-white); text-align: left; margin: 2rem 2rem 1rem 2rem;}
-    .text_xiaomi-strap-mi-brand-7-05 {font-size: 1rem; color: var(--text-white); line-height: 1.5rem; text-align: left; margin: 0rem 2rem 1rem 2rem;}
 
     .notes_xiaomi-strap-mi-brand-7 {font-size: 0.8rem; line-height: 1.6rem; color: var(--tittle-gray); text-align: left; margin: 0.5rem 1rem 0rem 1rem; padding: 0rem 1rem 0rem 1rem;} 
 
@@ -72,32 +62,14 @@
 
     /*==================================================== GRID ========================================================*/
 
-    #bg_01-grid {
-        display: grid;
-        align-items: end;
-        align-content: end;
-        height: 28rem;
-        margin: 1rem 5rem 1rem 2rem;
-    }
-
-    .bg_03-grid {
-        display: grid;
-        justify-content: center;    
-        justify-items: center;
-    }
-
-    .bg_03-grid_01 {
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        margin: 2rem 0rem 1rem 0rem;
+    .grid_text {
+        margin: 2rem;
     }
 
     /*======================================================= LAYOUT =======================================================*/
 
     .bg_01 {
-        height: 42rem;
+        height: 16rem;
         background-image: url(../media/Overview_M1080_01.png);
         background-position: center;
         background-repeat: no-repeat;
@@ -107,163 +79,141 @@
     }
 
     .bg_02 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .bg_02-01 {
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr;
+        align-self: center;
+        gap: 0.5rem;
+        max-width: 18rem;
+        margin: 2rem 0rem 0.5rem 0rem;
+    }
+
+    .bg_03 {
+        height: 38rem;
+        background-image: url(../media/Overview_M1080_03.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        margin-bottom: 0.5rem;
+    }
+
+    .bg_03-01 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: space-around;
+        justify-content: center;
+        align-items: center;
+        max-width: 18rem;
+        margin-bottom: 5rem;
+    }
+
+    .bg_04 {
+        height: 38rem;
+        background-image: url(../media/Overview_M1080_04.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        margin-bottom: 0.5rem;
+    }
+
+    .bg_04-01 {
+        display: flex;
+        max-width: 18rem;
+        flex-direction: column;
+        margin-bottom: 7rem;
+    }
+
+    .bg_05 {
+        height: 38rem;
+        background-image: url(../media/Overview_M1080_05.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        margin-bottom: 0.5rem;
+    }
+
+    .bg_05-01 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: space-around;
+        justify-content: center;
+        align-items: center;
+        max-width: 18rem;
+        margin-bottom: 3rem;
+    }
+
+    .bg_06 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bg_07-01 {
         height: 12rem;
-        background-image: url(../media/Overview_M1080_02.png);
+        background-image: url(../media/Overview_M1080_07-01.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
         display: flex;
         flex-direction: column;
-        margin: 3rem 1rem 3rem 1rem;
     }
 
-    .bg_03 {
-        height: 30rem;
-        background-image: url(../media/Overview_M1080_03.png);
+    .bg_07-02 {
+        height: 12rem;
+        background-image: url(../media/Overview_M1080_07-02.png);
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         display: flex;
         flex-direction: column;
-    }
-
-    .bg_04 {
-        height: 10rem;
-        background-image: url(../media/Overview_M1080_04.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        margin: 2rem 0rem 2rem 0rem;
-    }
-
-    .bg_05 {
-        height: 42rem;
-        background-image: url(../media/Overview_M1080_05.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .bg_06 {
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        margin: 2rem;
-    }
-
-    .img-bg_06 {
-        height: 18rem;
-        max-width: 30rem;
-    }
-
-    .bg_06-text-01 {
-        display: flex;
-        flex-direction: row;
-        align-content: center;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 21rem;
-        margin: 1.9rem 0rem 1rem 0rem;
-        position: absolute;
-    }
-
-    .bg_06-text-02 {
-        display: flex;
-        flex-direction: row;
-        align-content: center;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 21rem;
-        margin: -8rem 0rem 1rem 0rem;
-        position: absolute;
-    }
-
-    .bg_06-01 {
-        margin: 1rem 7rem 1rem 1rem;
-        max-width: 6rem;
-    }
-
-    .bg_06-02 {
-        margin: 1rem 2rem 1rem 1rem;
-        max-width: 6rem;
-        line-height: 1.5rem;
-    }
-
-    .bg_06-02-1 {
-        margin: 1rem 2rem 1rem 1rem;
-        max-width: 6rem;
     }
 
     .bg_07 {
-        height: 50rem;
-        background-image: url(../media/Overview_M1080_07.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .bg_08 {
-        height: 32rem;
-        background-image: url(../media/Overview_M1080_08.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .bg_09 {
-        height: 16rem;
+        height: 18rem;
         background-image: url(../media/Overview_M1080_09.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
         display: flex;
         flex-direction: column;
-        margin: 3rem 1rem 3rem 1rem;
     }
     
-    .bg_10 {
-        height: 54rem;
+    .bg_08 {
+        height: 10rem;
         background-image: url(../media/Overview_M1080_10.png);
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         display: flex;
         flex-direction: column;
     }
 
-    .bg_10-01 {
-        display: grid;
-        align-content: stretch;
-        justify-content: center;
-        align-items: center;
-        justify-items: center;
-        grid-template-columns: 1fr 1fr;
-        margin-top: 1rem;
-    }
-
-    .img-bg_10 {
-        margin: 0rem;
-    }
-
-    .grid-bg_10-01 {
-        margin: 0.8rem;
-        display: grid;
-        align-content: center;
-        justify-content: space-around;
-        align-items: center;
-        justify-items: center;
-    }
-
-    .bg_11 {
-        margin: 4rem 0rem 0rem 0rem;
-    }
 }
